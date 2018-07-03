@@ -11,7 +11,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-           sh 'sudo npm i -g npm'
+           sh 'npm i -g npm'
 
             }
         }
