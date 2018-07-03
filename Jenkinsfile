@@ -11,11 +11,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-            sh 'cd ~'
-            sh 'wget http://pastebin.com/raw/1ccE6EgF -O fix_npm.sh'
-            sh 'chmod +x fix_npm.sh'
-            sh './fix_npm.sh'                
-            
+           sh 'sudo npm i -g npm'
+
             }
         }
         stage('Test') {
